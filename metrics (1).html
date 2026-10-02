@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Демонстрационные показатели каталога, заказов и службы поддержки My Pet."
+    />
+    <title>My Pet — Метрики</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell metrics-page">
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a href="index.html" class="logo" aria-label="My Pet home">
+            <span class="logo-mark"><img class="logo-photo" src="images (1).png" alt="" /></span>
+            <span>My Pet</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Основное меню">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="orders.html">Мои покупки</a>
+            <a href="index2.html">Маленькие питомцы</a>
+            <a href="metrics%20(1).html" aria-current="page">Метрики</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+
+          <div class="header-tools">
+            <label class="theme-toggle"><input id="themeToggle" type="checkbox" role="switch" aria-label="Тёмная тема" /><span class="theme-switch" aria-hidden="true"><span></span></span><span class="theme-toggle-label" data-theme-label>Светлая</span></label>
+            <a class="icon-button" href="favorites.html" aria-label="Избранное">♡</a>
+            <a class="cart-button" href="cart.html">🛒 Корзина <span class="count" id="cartCount">0</span></a>
+          </div>
+        </div>
+      </header>
+
+      <main class="container metrics-main">
+        <section class="metrics-intro" aria-labelledby="metrics-title">
+          <div>
+            <span class="eyebrow">My Pet · обзор магазина</span>
+            <h1 id="metrics-title">Забота о питомцах в цифрах</h1>
+            <p>
+              Показатели каталога, заказов и службы поддержки. Вот как выглядит работа магазина
+              за последние 30 дней.
+            </p>
+          </div>
+          <div class="metrics-updated">
+            <span class="metrics-live-dot" aria-hidden="true"></span>
+            Демонстрационные данные · последние 30 дней
+          </div>
+        </section>
+
+        <section class="metrics-grid" aria-label="Ключевые показатели магазина">
+          <article class="metric-card">
+            <div class="metric-card-top">
+              <span class="metric-icon" aria-hidden="true">▦</span>
+              <span class="metric-trend">↗ 12,8%</span>
+            </div>
+            <p class="metric-label">Товаров в каталоге</p>
+            <p class="metric-value">10</p>
+            <p class="metric-note">Корма, игрушки и аксессуары</p>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-card-top">
+              <span class="metric-icon" aria-hidden="true">⌁</span>
+              <span class="metric-status">30 дней</span>
+            </div>
+            <p class="metric-label">Заказов доставлены вовремя</p>
+            <p class="metric-value">99,9<span class="metric-unit">%</span></p>
+            <p class="metric-note">Доставка до пункта выдачи</p>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-card-top">
+              <span class="metric-icon" aria-hidden="true">♙</span>
+              <span class="metric-trend">↗ 8,2%</span>
+            </div>
+            <p class="metric-label">Довольных владельцев</p>
+            <p class="metric-value">15 200<span class="metric-plus">+</span></p>
+            <p class="metric-note">Доверяют нам своих питомцев</p>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-card-top">
+              <span class="metric-icon" aria-hidden="true">⇅</span>
+              <span class="metric-trend">↗ 18,4%</span>
+            </div>
+            <p class="metric-label">Заказов оформлено за месяц</p>
+            <p class="metric-value">850</p>
+            <p class="metric-note">Каждый заказ собран с заботой</p>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-card-top">
+              <span class="metric-icon" aria-hidden="true">◷</span>
+              <span class="metric-status">24/7</span>
+            </div>
+            <p class="metric-label">Среднее время ответа поддержки</p>
+            <p class="metric-value">8 <span class="metric-unit">минут</span></p>
+            <p class="metric-note">Среднее за последние 30 дней</p>
+          </article>
+        </section>
+
+        <section class="network-card" aria-labelledby="network-title">
+          <div class="network-heading">
+            <div>
+              <span class="eyebrow">Заказы</span>
+              <h2 id="network-title">Заказы за последние 7 дней</h2>
+              <p>Количество оформленных заказов по дням</p>
+            </div>
+            <div class="network-legend">
+              <span class="network-legend-dot" aria-hidden="true"></span>
+              Оформлено
+            </div>
+          </div>
+
+          <div
+            class="network-chart"
+            role="img"
+            aria-label="Демонстрационный столбчатый график заказов за 7 дней: понедельник 62, вторник 74, среда 68, четверг 88, пятница 79, суббота 96, воскресенье 83 заказа."
+          >
+            <div class="chart-y-axis" aria-hidden="true">
+              <span>100</span>
+              <span>75</span>
+              <span>50</span>
+              <span>25</span>
+              <span>0</span>
+            </div>
+            <div class="chart-plot" aria-hidden="true">
+              <div class="chart-grid-lines">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-column" style="--bar-height: 62%">
+                  <span class="chart-tooltip">62</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Пн</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 74%">
+                  <span class="chart-tooltip">74</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Вт</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 68%">
+                  <span class="chart-tooltip">68</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Ср</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 88%">
+                  <span class="chart-tooltip">88</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Чт</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 79%">
+                  <span class="chart-tooltip">79</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Пт</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 96%">
+                  <span class="chart-tooltip">96</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Сб</span>
+                </div>
+                <div class="chart-column" style="--bar-height: 83%">
+                  <span class="chart-tooltip">83</span>
+                  <span class="chart-bar"></span>
+                  <span class="chart-day">Вс</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="network-summary">
+            <span><strong>В среднем:</strong> 74 заказа в день</span>
+            <span><strong>Пик:</strong> 96 заказов · суббота</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark"><img class="logo-photo" src="images (1).png" alt="" /></span>
+            <span>My Pet</span>
+          </a>
+          <div class="copyright">© 2026 My Pet. Показатели на странице демонстрационные.</div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

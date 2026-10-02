@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pet — Корзина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="logo" aria-label="My Pet home"><span class="logo-mark"><img class="logo-photo" src="images (1).png" alt="" /></span><span>My Pet</span></a>
+          <nav class="main-nav" aria-label="Основное меню">
+            <a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="orders.html">Мои покупки</a>
+            <a href="index2.html">Маленькие питомцы</a><a href="metrics%20(1).html">Метрики</a><a href="about.html">О нас</a><a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="header-tools"><label class="theme-toggle"><input id="themeToggle" type="checkbox" role="switch" aria-label="Тёмная тема" /><span class="theme-switch" aria-hidden="true"><span></span></span><span class="theme-toggle-label" data-theme-label>Светлая</span></label><a class="icon-button" href="favorites.html" aria-label="Избранное">♡</a><a class="cart-button" href="cart.html">🛒 Корзина <span class="count" id="cartCount">0</span></a></div>
+        </div>
+      </header>
+      <main class="container section-space">
+        <section class="orders">
+          <div class="section-heading"><span class="eyebrow">Корзина</span><h1 class="section-heading-title">Ваш заказ</h1></div>
+          <div class="cart-content" id="cartContent"></div>
+        </section>
+      </main>
+    </div>
+    <div class="modal" id="paymentModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="paymentModal"></div>
+      <div class="modal-dialog payment-modal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+        <div class="modal-header"><h3 id="paymentTitle">Способ оплаты</h3><button class="close-btn" type="button" data-close="paymentModal" aria-label="Закрыть способ оплаты">×</button></div>
+        <div class="payment-content">
+          <div class="payment-summary"><span>К оплате</span><strong id="paymentTotal">0 ₸</strong></div>
+          <div class="payment-summary"><span>Останется на балансе</span><strong id="paymentBalance">0 ₸</strong></div>
+          <div class="payment-methods" role="radiogroup" aria-label="Способ оплаты"><label class="payment-option"><input type="radio" name="paymentMethod" value="card" checked /><span>Kaspi Bank</span></label></div>
+          <div class="payment-card-panel" id="cardPaymentPanel">
+            <div class="saved-card-box" id="savedCardBox"></div>
+            <div class="bank-badge"><span>💳</span><strong>Оплата через Kaspi Bank</strong></div>
+            <div class="form-grid">
+              <div class="form-field wide-field"><label for="cardHolder">Владелец карты</label><input id="cardHolder" name="cardHolder" type="text" placeholder="Имя владельца" /></div>
+              <div class="form-field wide-field"><label for="cardNumber">Номер карты Kaspi</label><input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" /></div>
+              <div class="form-field"><label for="cardExpiry">Срок</label><input id="cardExpiry" name="cardExpiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" /></div>
+              <div class="form-field"><label for="cardCvv">CVV</label><input id="cardCvv" name="cardCvv" type="password" inputmode="numeric" maxlength="4" placeholder="123" /></div>
+            </div>
+            <label class="save-card-box"><input type="checkbox" id="saveCardCheckbox" checked /><span>Привязать карту Kaspi для следующих заказов</span></label>
+          </div>
+          <div class="payment-actions"><button class="secondary-btn" type="button" data-close="paymentModal">Отмена</button><button class="primary-btn" type="button" id="confirmPaymentBtn">Оплатить</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

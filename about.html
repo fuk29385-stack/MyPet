@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pet — О нас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="logo" aria-label="My Pet home"><span class="logo-mark"><img class="logo-photo" src="images (1).png" alt="" /></span><span>My Pet</span></a>
+          <nav class="main-nav" aria-label="Основное меню">
+            <a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="orders.html">Мои покупки</a>
+            <a href="index2.html">Маленькие питомцы</a><a href="metrics%20(1).html">Метрики</a><a href="about.html">О нас</a><a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="header-tools"><label class="theme-toggle"><input id="themeToggle" type="checkbox" role="switch" aria-label="Тёмная тема" /><span class="theme-switch" aria-hidden="true"><span></span></span><span class="theme-toggle-label" data-theme-label>Светлая</span></label><a class="icon-button" href="favorites.html" aria-label="Избранное">♡</a><a class="cart-button" href="cart.html">🛒 Корзина <span class="count" id="cartCount">0</span></a></div>
+        </div>
+      </header>
+      <main class="container section-space">
+        <section class="features">
+          <div class="section-heading center"><span class="eyebrow">Почему мы</span><h1>Забота, качество и скорость</h1></div>
+          <div class="features-grid">
+            <article class="feature-card"><div class="feature-icon">🚚</div><h3>Быстрая доставка</h3><p>Доставляем заказы в кратчайшие сроки по Казахстану.</p></article>
+            <article class="feature-card"><div class="feature-icon">✅</div><h3>Качество</h3><p>Только проверенные бренды и безопасные материалы для домашних любимцев.</p></article>
+            <article class="feature-card"><div class="feature-icon">💬</div><h3>Поддержка</h3><p>Наша команда поможет выбрать товар и ответит на вопросы.</p></article>
+            <article class="feature-card"><div class="feature-icon">🐾</div><h3>Забота о питомцах</h3><p>Мы создаём комфорт, чтобы каждый питомец получал только лучшее.</p></article>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about-media"><img src="images/about-pets.svg" alt="Домашние питомцы на прогулке" /></div>
+          <div class="about-copy">
+            <span class="eyebrow">О нас</span><h2>Мы знаем, что любят ваши питомцы</h2>
+            <p>My Pet — это магазин, созданный для тех, кто любит своих домашних животных так же, как и членов семьи. Мы подбираем товары, которые делают быт животных уютнее, безопаснее и интереснее.</p>
+            <p>Наш ассортимент включает полезные корма, качественные аксессуары, долговечные игрушки и витамины, которые поддерживают здоровье и хорошее настроение питомцев в любом возрасте.</p>
+            <ul class="about-list"><li>Проверенные бренды и безопасные материалы</li><li>Подарки и акции для постоянных клиентов</li><li>Подбор товаров под особенности питомца</li></ul>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="section-heading center"><span class="eyebrow">Отзывы</span><h2>Питомцы и их хозяева довольны</h2></div>
+          <div class="reviews-grid">
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>«Отличный магазин: всё пришло быстро, а игрушки реально нравятся нашему щенку.»</p><div class="review-author"><strong>Анна М.</strong><span>хозяйка бигля</span></div></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>«Подобрали корм и аксессуары по рекомендациям — всё очень качественно и удобно.»</p><div class="review-author"><strong>Максим К.</strong><span>владелец кота</span></div></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>«Понравился сервис, быстро ответили на вопросы и помогли с выбором подарка.»</p><div class="review-author"><strong>Елена С.</strong><span>любительница собак</span></div></article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
