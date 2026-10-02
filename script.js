@@ -7,7 +7,9 @@ const products = [
     oldPrice: 1890,
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80',
-    badge: 'Новинка'
+    badge: 'Новинка',
+    description: 'Сбалансированный сухой корм для активных щенков с гречкой, мясом и полезными витаминами. Подходит для ежедневного питания и помогает поддерживать иммунитет, крепкие зубы и стабильный обмен веществ.',
+    features: ['Гречка и мясо в основе рецепта', 'Поддержка иммунитета и энергии', 'Мягкий вкус для капризных щенков']
   },
   {
     id: 2,
@@ -17,7 +19,9 @@ const products = [
     oldPrice: 1300,
     rating: 4.7,
     image: 'https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&q=80',
-    badge: 'Хит'
+    badge: 'Хит',
+    description: 'Высокая когтеточка из плотного сизаля с устойчивым основанием, чтобы кошка могла точить когти, играть и отдыхать без лишнего шума в квартире.',
+    features: ['Устойчивое основание для безопасности', 'Грубая поверхность для заточки когтей', 'Компактный размер для дома и квартиры']
   },
   {
     id: 3,
@@ -27,7 +31,9 @@ const products = [
     oldPrice: 760,
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80',
-    badge: 'Популярно'
+    badge: 'Популярно',
+    description: 'Игрушка-кача для жевания и игры помогает снять стресс, поддерживает гигиену зубов и даёт питомцу занятие на несколько часов.',
+    features: ['Мягкая текстура для безопасного жевания', 'Подходит для щенков и молодых собак', 'Лёгкий материал без резкого запаха']
   },
   {
     id: 4,
@@ -37,7 +43,9 @@ const products = [
     oldPrice: 1690,
     rating: 4.6,
     image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80',
-    badge: 'Осень'
+    badge: 'Осень',
+    description: 'Лёгкий и тёплый дождевик для прогулок в ветреную погоду: защищает от сырости, не мешает движениям и удобен для ежедневного использования.',
+    features: ['Водонепроницаемая ткань', 'Свободный крой для комфортных прогулок', 'Отражающие детали для видимости вечером']
   },
   {
     id: 5,
@@ -47,7 +55,9 @@ const products = [
     oldPrice: 2790,
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=900&q=80',
-    badge: 'Топ'
+    badge: 'Топ',
+    description: 'Премиальная лежанка с мягкой поддержкой спины и антискользящим дном, которая создаёт уютное место для сна после активных прогулок.',
+    features: ['Мягкая пена и приятная ткань', 'Прочный каркас и антискользящее основание', 'Подходит для крупных и средних собак']
   },
   {
     id: 6,
@@ -57,7 +67,9 @@ const products = [
     oldPrice: 1100,
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80',
-    badge: 'Премиум'
+    badge: 'Премиум',
+    description: 'Корм с лососем и овощами для взрослых кошек, который помогает поддерживать здоровую шерсть, нормальный вес и хороший аппетит.',
+    features: ['Белок лосося в составе', 'Поддержка блестящей шерсти', 'Сбалансированный состав без лишних добавок']
   },
   {
     id: 7,
@@ -67,7 +79,9 @@ const products = [
     oldPrice: 930,
     rating: 4.7,
     image: 'https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?auto=format&fit=crop&w=900&q=80',
-    badge: 'Игровой'
+    badge: 'Игровой',
+    description: 'Интерактивная игрушка с скрытыми лакомствами, которая развлекает собаку и помогает тренировать внимание, ловкость и терпение.',
+    features: ['Развивает интеллект и ловкость', 'Внутренний отсек для лакомства', 'Прочный корпус для длительной игры']
   },
   {
     id: 8,
@@ -77,7 +91,9 @@ const products = [
     oldPrice: 1860,
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80',
-    badge: 'Удобно'
+    badge: 'Удобно',
+    description: 'Комфортная шлейка с мягкими вставками и регулировкой по размеру. Подходит для ежедневных прогулок и помогает распределять нагрузку равномерно.',
+    features: ['Мягкая обивка без натирания', 'Регулировка под рост и размер питомца', 'Надёжный замок и крепление для поводка']
   },
   {
     id: 9,
@@ -87,7 +103,9 @@ const products = [
     oldPrice: 820,
     rating: 4.5,
     image: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80',
-    badge: 'Легко'
+    badge: 'Легко',
+    description: 'Антискользящая миска со стальным основанием и широким дном, которая снижает шум и помогает любимцу комфортно есть и пить.',
+    features: ['Противоскользящее основание', 'Лёгкая в уходе поверхность', 'Подходит для корма и воды']
   },
   {
     id: 10,
@@ -97,7 +115,9 @@ const products = [
     oldPrice: 3090,
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=80',
-    badge: 'Комфорт'
+    badge: 'Комфорт',
+    description: 'Тёплый домик для кота с мягким внутренним слоем и уютной формой, который создаёт место для отдыха, сна и спокойствия в доме.',
+    features: ['Тёплая и мягкая внутренняя поверхность', 'Спокойное место для сна и отдыха', 'Прочная форма и комфортный размер']
   }
 ];
 
@@ -288,6 +308,63 @@ function showToast(message) {
   }, 2200);
 }
 
+function ensureProductModal() {
+  if (document.getElementById('productModal')) return;
+
+  const modal = document.createElement('div');
+  modal.id = 'productModal';
+  modal.className = 'modal';
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = `
+    <div class="modal-backdrop" data-close="productModal"></div>
+    <div class="modal-dialog product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="close-btn" type="button" data-close="productModal" aria-label="Закрыть">×</button>
+      <div class="product-modal-content"></div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+function openProductModal(productId) {
+  ensureProductModal();
+
+  const product = products.find((item) => item.id === Number(productId));
+  if (!product) return;
+
+  const modal = document.getElementById('productModal');
+  if (!modal) return;
+
+  const currentFavorites = state.favorites.includes(product.id);
+  const isFavorite = currentFavorites ? '♥' : '♡';
+
+  const content = modal.querySelector('.product-modal-content');
+  content.innerHTML = `
+    <div class="product-modal-image">
+      <img src="${product.image}" alt="${product.name}" />
+      <span class="product-badge">${product.badge}</span>
+    </div>
+    <div class="product-modal-info">
+      <span class="eyebrow accent">${categoryMap[product.category]}</span>
+      <h3 id="productModalTitle">${product.name}</h3>
+      <div class="rating">★ ${product.rating}</div>
+      <div class="price-box">
+        <span class="price">${formatPrice(product.price)}</span>
+        <span class="old-price">${formatPrice(product.oldPrice)}</span>
+      </div>
+      <p class="product-detail-description">${product.description}</p>
+      <ul class="product-detail-list">
+        ${product.features.map((feature) => `<li>${feature}</li>`).join('')}
+      </ul>
+      <div class="product-detail-actions">
+        <button type="button" class="primary-btn modal-buy" data-product-id="${product.id}">В корзину</button>
+        <button type="button" class="secondary-btn modal-favorite" data-product-id="${product.id}" aria-label="Добавить в избранное">${isFavorite}</button>
+      </div>
+    </div>
+  `;
+
+  openModal('productModal');
+}
+
 function renderOrders() {
   if (!ordersGrid) return;
 
@@ -460,9 +537,13 @@ function renderProducts() {
               <span class="old-price">${formatPrice(product.oldPrice)}</span>
             </div>
             <div class="discount-tag">-${Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)}%</div>
+            <p class="product-short-description">${product.description}</p>
             <div class="product-actions">
               <button class="add-cart-btn" data-product-id="${product.id}" type="button">
                 ${quantity > 0 ? 'Добавить ещё' : 'В корзину'}
+              </button>
+              <button class="secondary-btn details-btn" data-product-id="${product.id}" type="button">
+                Подробнее
               </button>
             </div>
           </div>
@@ -948,6 +1029,18 @@ function bindEvents() {
       const favoriteButtonElement = event.target.closest('.favorite-toggle');
       if (favoriteButtonElement) {
         toggleFavorite(favoriteButtonElement.dataset.productId);
+        return;
+      }
+
+      const detailsButton = event.target.closest('.details-btn');
+      if (detailsButton) {
+        openProductModal(detailsButton.dataset.productId);
+        return;
+      }
+
+      const card = event.target.closest('.product-card');
+      if (card && !event.target.closest('button')) {
+        openProductModal(card.dataset.id);
       }
     });
   }
@@ -955,6 +1048,23 @@ function bindEvents() {
   document.addEventListener('click', (event) => {
     const trigger = event.target.closest('[data-product-id]');
     const quantityButton = event.target.closest('[data-action]');
+
+    if (event.target.closest('.modal-buy')) {
+      const productId = event.target.closest('.modal-buy').dataset.productId;
+      addToCart(productId, event.target.closest('.modal-buy'));
+      closeModal('productModal');
+      return;
+    }
+
+    if (event.target.closest('.modal-favorite')) {
+      const productId = event.target.closest('.modal-favorite').dataset.productId;
+      toggleFavorite(productId);
+      const button = event.target.closest('.modal-favorite');
+      const isFavorite = state.favorites.includes(Number(productId));
+      button.textContent = isFavorite ? '♥' : '♡';
+      button.setAttribute('aria-label', isFavorite ? 'Удалить из избранного' : 'Добавить в избранное');
+      return;
+    }
 
     if (quantityButton) {
       const action = quantityButton.dataset.action;
