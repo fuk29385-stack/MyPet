@@ -1,49 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Pet — Каталог</title>
+    <title>My Pet вЂ” РљР°С‚Р°Р»РѕРі</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=20261002" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="container header-inner">
           <a href="index.html" class="logo" aria-label="My Pet home"><span class="logo-mark"><img class="logo-photo" src="images (1).png" alt="" /></span><span>My Pet</span></a>
-          <nav class="main-nav" aria-label="Основное меню">
-            <a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="orders.html">Мои покупки</a>
-            <a href="index2.html">Маленькие питомцы</a><a href="metrics%20(1).html">Метрики</a><a href="about.html">О нас</a><a href="contacts.html">Контакты</a>
+          <nav class="main-nav" aria-label="РћСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ">
+            <a href="index.html">Р“Р»Р°РІРЅР°СЏ</a><a href="catalog.html">РљР°С‚Р°Р»РѕРі</a><a href="orders.html">РњРѕРё РїРѕРєСѓРїРєРё</a>
+            <a href="index2.html">РњР°Р»РµРЅСЊРєРёРµ РїРёС‚РѕРјС†С‹</a><a href="metrics%20(1).html">РњРµС‚СЂРёРєРё</a><a href="about.html">Рћ РЅР°СЃ</a><a href="contacts.html">РљРѕРЅС‚Р°РєС‚С‹</a>
           </nav>
           <div class="header-tools">
-            <label class="search-box" aria-label="Поиск товаров"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Поиск" /></label>
-            <label class="theme-toggle"><input id="themeToggle" type="checkbox" role="switch" aria-label="Тёмная тема" /><span class="theme-switch" aria-hidden="true"><span></span></span><span class="theme-toggle-label" data-theme-label>Светлая</span></label>
-            <a class="icon-button" href="favorites.html" aria-label="Избранное">♡</a>
-            <a class="cart-button" href="cart.html" aria-label="Корзина">🛒 Корзина <span class="count" id="cartCount">0</span></a>
+            <label class="search-box" aria-label="РџРѕРёСЃРє С‚РѕРІР°СЂРѕРІ"><span class="search-icon">вЊ•</span><input id="searchInput" type="search" placeholder="РџРѕРёСЃРє" /></label>
+            <label class="theme-toggle"><input id="themeToggle" type="checkbox" role="switch" aria-label="РўС‘РјРЅР°СЏ С‚РµРјР°" /><span class="theme-switch" aria-hidden="true"><span></span></span><span class="theme-toggle-label" data-theme-label>РЎРІРµС‚Р»Р°СЏ</span></label>
+            <a class="icon-button" href="favorites.html" aria-label="РР·Р±СЂР°РЅРЅРѕРµ">в™Ў</a>
+            <a class="cart-button" href="cart.html" aria-label="РљРѕСЂР·РёРЅР°">рџ›’ РљРѕСЂР·РёРЅР° <span class="count" id="cartCount">0</span></a>
           </div>
         </div>
       </header>
       <main class="container section-space">
-        <section class="catalog" aria-label="Каталог товаров">
+        <section class="catalog" aria-label="РљР°С‚Р°Р»РѕРі С‚РѕРІР°СЂРѕРІ">
           <div class="catalog-header">
-            <div><span class="eyebrow">Каталог</span><h1 class="section-heading-title">Лучший выбор для вашего питомца</h1></div>
+            <div><span class="eyebrow">РљР°С‚Р°Р»РѕРі</span><h1 class="section-heading-title">Р›СѓС‡С€РёР№ РІС‹Р±РѕСЂ РґР»СЏ РІР°С€РµРіРѕ РїРёС‚РѕРјС†Р°</h1></div>
             <div class="catalog-controls">
-              <select id="sortSelect" aria-label="Сортировка товаров">
-                <option value="default">По умолчанию</option><option value="price-asc">По цене: ↑</option>
-                <option value="price-desc">По цене: ↓</option><option value="rating-desc">По рейтингу</option>
+              <select id="sortSelect" aria-label="РЎРѕСЂС‚РёСЂРѕРІРєР° С‚РѕРІР°СЂРѕРІ">
+                <option value="default">РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ</option><option value="price-asc">РџРѕ С†РµРЅРµ: в†‘</option>
+                <option value="price-desc">РџРѕ С†РµРЅРµ: в†“</option><option value="rating-desc">РџРѕ СЂРµР№С‚РёРЅРіСѓ</option>
               </select>
             </div>
           </div>
           <div class="catalog-toolbar">
-            <div class="filter-group" aria-label="Фильтры категорий">
-              <button class="filter-button" type="button" data-filter="all">Все</button>
-              <button class="filter-button" type="button" data-filter="dogs">Собаки</button>
-              <button class="filter-button" type="button" data-filter="cats">Кошки</button>
-              <button class="filter-button" type="button" data-filter="toys">Игрушки</button>
-              <button class="filter-button" type="button" data-filter="accessories">Аксессуары</button>
+            <div class="filter-group" aria-label="Р¤РёР»СЊС‚СЂС‹ РєР°С‚РµРіРѕСЂРёР№">
+              <button class="filter-button" type="button" data-filter="all">Р’СЃРµ</button>
+              <button class="filter-button" type="button" data-filter="dogs">РЎРѕР±Р°РєРё</button>
+              <button class="filter-button" type="button" data-filter="cats">РљРѕС€РєРё</button>
+              <button class="filter-button" type="button" data-filter="toys">РРіСЂСѓС€РєРё</button>
+              <button class="filter-button" type="button" data-filter="accessories">РђРєСЃРµСЃСЃСѓР°СЂС‹</button>
             </div>
           </div>
           <div class="product-grid" id="productGrid" aria-live="polite"></div>
@@ -51,6 +51,7 @@
       </main>
     </div>
     <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js"></script>
+    <script src="script.js?v=20261002"></script>
   </body>
 </html>
+
